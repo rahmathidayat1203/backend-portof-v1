@@ -1,0 +1,2 @@
+DSN = "localhost=example user=postgres password=password dbname=dbname port=port sslmode=disable" //enter with your server name database
+SERVICE_NAME = ""                                                                                 //enter with your name service
