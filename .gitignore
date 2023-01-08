@@ -1,3 +1,4 @@
 //ignoring go.sum
 go.sum
-env
+//ignoring .env file
+.env
