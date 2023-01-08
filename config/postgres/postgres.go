@@ -2,6 +2,7 @@ package postgres
 
 import (
 	"os"
+	"rahmathidayat1203/backend-portofolio-v1/model"
 
 	log "github.com/sirupsen/logrus"
 	"gorm.io/driver/postgres"
@@ -16,5 +17,6 @@ func InitDB() *gorm.DB {
 		log.Fatal(err)
 	}
 
+	db.AutoMigrate(&model.Message{})
 	return db
 }
